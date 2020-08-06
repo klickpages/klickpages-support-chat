@@ -103,7 +103,7 @@ describe('@/components/SupportChat/Main', () => {
 
       it('should call Notify.error', () => {
         expect($notify.error).toHaveBeenCalledWith({
-          message: 'Error message',
+          message: $t('supportChat.errorMessage'),
           autoHide: true,
         });
       });

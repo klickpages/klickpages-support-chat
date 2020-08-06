@@ -24,11 +24,6 @@ module.exports = {
     '**/src/**/*.test.(js|jsx|ts|tsx)',
   ],
   testURL: 'http://localhost/',
-  collectCoverageFrom: [
-    '**/src/**/*.{js,vue,ts}',
-    '!**/src/*.{js,vue,ts}',
-    '!**/node_modules/**',
-  ],
   watchPlugins: [
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname',

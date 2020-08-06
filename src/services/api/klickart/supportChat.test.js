@@ -1,3 +1,4 @@
+import i18n from '@/i18n';
 import SupportChat from './supportChat';
 import Klickart from './index';
 
@@ -5,13 +6,20 @@ jest.mock('./index', () => (
   jest.fn().mockImplementation(() => { })
 ));
 
+jest.mock('@/i18n', () => (
+  jest.fn().mockImplementation(() => { })
+));
+
+i18n.locale = 'pt-BR';
+const supportChatPath = `${i18n.locale}/support_chats`;
+
 describe('@/services/api/klickart/supportChat', () => {
   let supportChatRequest;
   let expectedConfig = {};
 
   describe('When creating a new support chat request', () => {
     beforeAll(() => {
-      expectedConfig.path = '/support_chats';
+      expectedConfig.path = supportChatPath;
       supportChatRequest = new SupportChat();
     });
 
@@ -31,7 +39,7 @@ describe('@/services/api/klickart/supportChat', () => {
       };
 
       expectedConfig = {
-        path: '/support_chats',
+        path: supportChatPath,
         param: true,
       };
 
