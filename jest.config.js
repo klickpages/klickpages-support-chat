@@ -29,12 +29,8 @@ module.exports = {
     '!**/src/*.{js,vue,ts}',
     '!**/node_modules/**',
   ],
-  coverageThreshold: {
-    global: {
-      branches: 80,
-      functions: 90,
-      lines: 90,
-      statements: 90,
-    },
-  },
+  watchPlugins: [
+    'jest-watch-typeahead/filename',
+    'jest-watch-typeahead/testname',
+  ],
 };
