@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@/components/SupportChat/Main when component is mounted when there is a support chat in the page should render html correctly 1`] = `
+<div
+  id="support-chat"
+/>
+`;
+
+exports[`@/components/SupportChat/Main when component is mounted when there is no support chat in the page should render html correctly 1`] = `
+<div
+  id="support-chat"
+/>
+`;
