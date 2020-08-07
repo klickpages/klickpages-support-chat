@@ -1,10 +1,16 @@
 {
-  "name": "klickpages-support-chat",
+  "name": "@klicksite/klickpages-support-chat",
   "version": "1.0.0",
   "private": false,
-  "description": "A vue component for Klick applications to get support chat",
+  "license": "ISC",
+  "description": "A Vue component for klick family applications to support chat rendering",
   "author": "Klickpages <account@klickpages.com.br>",
   "main": "dist/klickpages-support-chat.umd.js",
+  "homepage": "https://github.com:klickpages/klickpages-support-chat",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:klickpages/klickpages-support-chat.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name klickpages-support-chat src/wrapper.js",
@@ -38,6 +44,5 @@
     "sass": "^1.26.10",
     "sass-loader": "^9.0.3",
     "vue-template-compiler": "^2.6.11"
-  },
-  "license": "ISC"
+  }
 }
