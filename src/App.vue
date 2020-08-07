@@ -12,13 +12,13 @@ import 'klicknotify/src/scss/main.scss';
 
 export default {
   name: 'App',
-  components: {
-    SupportChat,
-  },
   data() {
     return {
       klickartURL: 'http://art.klickpages.local',
     };
+  },
+  components: {
+    SupportChat,
   },
 };
 </script>

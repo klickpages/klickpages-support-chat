@@ -11,18 +11,19 @@ export default {
   props: {
     klickartURL: String,
   },
-  methods: mapActions({
-    getChat: 'SupportChat/getChat',
-  }),
   computed: {
     ...mapGetters({
       chat: 'SupportChat/chat',
     }),
+
     hasSupportChat() {
       const chatWrapperClass = 'md-chat-widget-wrapper';
       return !!document.body.querySelector(`.${chatWrapperClass}`);
     },
   },
+  methods: mapActions({
+    getChat: 'SupportChat/getChat',
+  }),
   async mounted() {
     setklickartURL(this.klickartURL);
 
