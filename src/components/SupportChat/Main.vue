@@ -40,7 +40,7 @@ export default {
       this.$el.appendChild(HTMLChatFragment);
     } catch (error) {
       this.$notify.error({
-        message: 'Error message',
+        message: this.$t('supportChat.errorMessage'),
         autoHide: true,
       });
     }

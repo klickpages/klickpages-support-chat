@@ -2,6 +2,10 @@ import MockAdapter from 'axios-mock-adapter';
 import SupportChat from '@/services/api/klickart/supportChat';
 import actions from './actions';
 
+jest.mock('@/i18n', () => (
+  jest.fn().mockImplementation(() => { })
+));
+
 describe('@/store/supportChat/actions', () => {
   const supportChatsRequest = new SupportChat();
   const mockSupportChatsRequest = new MockAdapter(supportChatsRequest.axios);
