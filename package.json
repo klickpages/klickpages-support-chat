@@ -1,11 +1,13 @@
 {
+  "name": "klickpages-support-chat",
   "version": "1.0.0",
   "private": false,
   "description": "A vue component for Klick applications to get support chat",
   "author": "Klickpages <account@klickpages.com.br>",
+  "main": "dist/klickpages-support-chat.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name klickpages-support-chat src/wrapper.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "coverage": "yarn lint; yarn test:unit --coverage"
